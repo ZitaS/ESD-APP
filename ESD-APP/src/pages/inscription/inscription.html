@@ -7,23 +7,34 @@
 <ion-header>
 
     <ion-navbar color="esd">
-        <ion-title item-start icon-left>
-            <ion-icon name="md-contact"></ion-icon>
-            Inscription</ion-title>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col col-4>
+                    <ion-title item-start icon-left>
+                        <ion-icon name="md-contact"></ion-icon>
+                        </ion-title>
+                </ion-col>
+                <ion-col col-4 text-center><img class="logo" src="../../assets/imgs/culture-d.png" alt=""></ion-col>
+                <ion-col col-4 text-right><img class="logo" src="../../assets/imgs/coins-150.png" alt=""></ion-col>
+
+            </ion-row>
+
+        </ion-grid>
     </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-    <h3>Je crée mon profil en 1 clic !</h3>
+   <h1 text-center>Inscription</h1>
     <ion-list>
 
         <button ion-button icon-start color="facebook" block>
             <ion-icon name="logo-facebook"></ion-icon>
             Facebook connect
         </button>
-       <h3>Je remplis le formulaire classique</h3>
+        <p text-center>Ou je remplis le formulaire classique</p>
 
         <ion-item>
             <ion-label floating>Nom*</ion-label>
