@@ -21,6 +21,11 @@ import { PrehomePage } from '../pages/prehome/prehome';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { FIREBASE_PARAMS} from './app.firebase.config';
+import { AngularFireModule } from "angularfire2";
+import { AngularFireAuth } from 'angularfire2/auth';
+import { AngularFirestore } from 'angularfire2/firestore';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -41,7 +46,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(FIREBASE_PARAMS),
+   AngularFireAuth,
+   AngularFirestore
+   //CityProvider
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -62,9 +71,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PrehomePage
   ],
   providers: [
+     AngularFireAuth,
+   AngularFirestore,
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler,}
   ]
 })
 export class AppModule {}

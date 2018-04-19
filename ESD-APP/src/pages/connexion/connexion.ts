@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { InscriptionPage } from '../inscription/inscription';
-
+import { HomePage } from '../home/home';
+import { User } from '../../interface.User';
+import { AngularFireAuth} from "angularfire2/auth";
 /**
  * Generated class for the ConnexionPage page.
  *
@@ -16,7 +18,11 @@ import { InscriptionPage } from '../inscription/inscription';
 })
 export class ConnexionPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+user = {} as user
+
+constructor(public navCtrl: NavController,
+public navParams: NavParams,
+public afAuth:AngularFireAuth) {
   }
 
   ionViewDidLoad() {
@@ -25,7 +31,22 @@ export class ConnexionPage {
     
   inscription()
   {
-    this.navCtrl.setRoot(InscriptionPage);
+    this.navCtrl.push('InscriptionPage');
   }
+  
+  async connexion()
+  {
+  
+  try {
+  
+let result = await this.afAuth.auth.signInWithEmailAndPassword(this.user.email,this.user.password);
+if(result) {
+this.navCtrl.setRoot("HomePage");
+}} catch(err) {
+console.log(err);
+
 
 }
+}
+}
+
