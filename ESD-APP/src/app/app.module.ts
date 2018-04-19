@@ -24,6 +24,7 @@ import { FIREBASE_PARAMS} from './app.firebase.config';
 import { AngularFireModule } from "angularfire2";
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFirestore } from 'angularfire2/firestore';
+import { ItemProvider } from '../providers/item/item';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { AngularFirestore } from 'angularfire2/firestore';
    AngularFirestore,
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ItemProvider
   ]
 })
 export class AppModule {}
