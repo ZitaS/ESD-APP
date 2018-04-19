@@ -12,6 +12,7 @@ import { TousPage } from '../tous/tous';
 import { JeuPage } from '../jeu/jeu';
 import { TournoiPage } from '../tournoi/tournoi';
 import { EsdPage } from '../esd/esd';
+import { PrehomePage } from '../prehome/prehome';
 
 @Component({
   templateUrl: 'tabs.html'
@@ -30,6 +31,7 @@ export class TabsPage {
   tab10Root = JeuPage;
   tab11Root = TournoiPage;
   tab12Root = EsdPage;
+  tab13Root = PrehomePage;
 
   constructor() {
 
