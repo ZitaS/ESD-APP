@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ConnexionPage } from '../connexion/connexion';
+import { InscriptionPage } from '../inscription/inscription';
 
 /**
  * Generated class for the PrehomePage page.
@@ -20,6 +22,15 @@ export class PrehomePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PrehomePage');
+  }
+  connexion()
+  {
+    this.navCtrl.setRoot(ConnexionPage);
+  } 
+  
+  inscription()
+  {
+    this.navCtrl.setRoot(InscriptionPage);
   }
 
 }
