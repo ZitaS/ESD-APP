@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { InscriptionPage } from '../inscription/inscription';
 import { HomePage } from '../home/home';
-import { User } from '../../interface.User';
+import { User } from '../../interface/User';
 import { AngularFireAuth} from "angularfire2/auth";
 /**
  * Generated class for the ConnexionPage page.
@@ -18,7 +18,7 @@ import { AngularFireAuth} from "angularfire2/auth";
 })
 export class ConnexionPage {
 
-user = {} as user
+user = {} as User
 
 constructor(public navCtrl: NavController,
 public navParams: NavParams,
@@ -36,17 +36,15 @@ public afAuth:AngularFireAuth) {
   
   async connexion()
   {
-  
-  try {
-  
-let result = await this.afAuth.auth.signInWithEmailAndPassword(this.user.email,this.user.password);
-if(result) {
-this.navCtrl.setRoot("HomePage");
-}} catch(err) {
-console.log(err);
+      try {
 
-
-}
-}
+          let result = await this.afAuth.auth.signInWithEmailAndPassword(this.user.email,this.user.password);
+        if(result) {
+            this.navCtrl.setRoot("HomePage");
+        }
+      }catch(err) {
+          console.log(err);
+      }
+  }
 }
 
