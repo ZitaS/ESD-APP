@@ -15,7 +15,7 @@ import { ActualitésPage } from '../pages/actualités/actualités';
 import { TousPage } from '../pages/tous/tous';
 import { JeuPage } from '../pages/jeu/jeu';
 import { TournoiPage } from '../pages/tournoi/tournoi';
-import { ESDPage } from '../pages/esd/esd';
+import { EsdPage } from '../pages/esd/esd';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -35,7 +35,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TousPage,
     JeuPage,
     TournoiPage,
-    ESDPage
+    EsdPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +56,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TousPage,
     JeuPage,
     TournoiPage,
-    ESDPage
+    EsdPage
   ],
   providers: [
     StatusBar,
