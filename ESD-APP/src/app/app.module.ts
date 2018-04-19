@@ -21,6 +21,8 @@ import { PrehomePage } from '../pages/prehome/prehome';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { FIREBASE_PARAMS} from './app.firebase.config';
+
 @NgModule({
   declarations: [
     MyApp,
