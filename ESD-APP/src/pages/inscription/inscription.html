@@ -6,21 +6,25 @@
 -->
 <ion-header>
 
-    <ion-navbar>
-        <ion-title>Inscription</ion-title>
+    <ion-navbar color="esd">
+        <ion-title item-start icon-left>
+            <ion-icon name="md-contact"></ion-icon>
+            Inscription</ion-title>
     </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-       <p>Je crée mon profil en 1 clic !</p>
+    <h3>Je crée mon profil en 1 clic !</h3>
     <ion-list>
 
-<button ion-button icon-start color="facebook" block>
-  <ion-icon name="logo-facebook" ></ion-icon>
-  Facebook connect
-</button>
+        <button ion-button icon-start color="facebook" block>
+            <ion-icon name="logo-facebook"></ion-icon>
+            Facebook connect
+        </button>
+       <h3>Je remplis le formulaire classique</h3>
+
         <ion-item>
             <ion-label floating>Nom*</ion-label>
             <ion-input type="text"></ion-input>
@@ -74,6 +78,6 @@
 
 
     </ion-list>
-<button ion-button full type="submit" >Default</button>
+    <button ion-button full type="submit">S'inscrire</button>
 
 </ion-content>

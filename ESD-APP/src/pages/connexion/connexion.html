@@ -6,13 +6,34 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Connexion</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Connexion</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+    <ion-list>
 
+        <ion-item>
+            <ion-label floating>Mail*</ion-label>
+            <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Password*</ion-label>
+            <ion-input type="password"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            <a>Mot de passe oublié</a>
+        </ion-item>
+    <button ion-button full type="submit">Se connecter</button>
+
+        <ion-item>
+           <p>Pas encore de compte ?  <a>Inscrivez-vous</a></p>
+        </ion-item>
+
+    </ion-list>
 </ion-content>
