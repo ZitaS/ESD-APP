@@ -10,6 +10,11 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { ProfilPage } from '../pages/profil/profil';
 import { InscriptionPage } from '../pages/inscription/inscription';
 import { ConnexionPage } from '../pages/connexion/connexion';
+import { MesStatistiquesPage } from '../pages/mes-statistiques/mes-statistiques';
+import { ActualitésPage } from '../pages/actualités/actualités';
+import { TousPage } from '../pages/tous/tous';
+import { JeuPage } from '../pages/jeu/jeu';
+import { TournoiPage } from '../pages/tournoi/tournoi';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,7 +28,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     ProfilPage,
     InscriptionPage,
-    ConnexionPage
+    ConnexionPage,
+    MesStatistiquesPage,
+    ActualitésPage,
+    TousPage,
+    JeuPage,
+    TournoiPage
   ],
   imports: [
     BrowserModule,
@@ -38,8 +48,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     ProfilPage,
     InscriptionPage,
-    ConnexionPage
-    
+    ConnexionPage,
+    MesStatistiquesPage,
+    ActualitésPage,
+    TousPage,
+    JeuPage,
+    TournoiPage
   ],
   providers: [
     StatusBar,
