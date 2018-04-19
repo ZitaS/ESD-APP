@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { InscriptionPage } from '../inscription/inscription';
 import { HomePage } from '../home/home';
-import { User } from '../../interface/User';
+import { User } from '../../interface.User';
 import { AngularFireAuth} from "angularfire2/auth";
 /**
  * Generated class for the ConnexionPage page.
@@ -18,7 +18,7 @@ import { AngularFireAuth} from "angularfire2/auth";
 })
 export class ConnexionPage {
 
-user = {} as User
+user = {} as user
 
 constructor(public navCtrl: NavController,
 public navParams: NavParams,
