@@ -15,23 +15,133 @@
 
 <ion-content padding>
 
-    <ion-card>
-      <ion-card-header>
-        Nous
-      </ion-card-header>
-      <ion-card-content>
-        Quelle que soit leur expertise, les étudiants de l’ESD bénéficient tous d’un socle commun de compétences : la capacité à créer, coder et développer leurs projets. La combinaison de ces 3 savoir-faire, associée au développement du savoir-être digital, fait de nos étudiants des profils extrêmement recherchés sur le marché.
-      </ion-card-content>
-    </ion-card>
+    <H1>Nous</H1>
+    <p>Quelle que soit leur expertise, les étudiants de l’ESD bénéficient tous d’un socle commun de compétences : la capacité à créer, coder et développer leurs projets. La combinaison de ces 3 savoir-faire, associée au développement du savoir-être digital, fait de nos étudiants des profils extrêmement recherchés sur le marché.</p>
+    
+    <H1>Formations</H1>
     
     <ion-grid>
       <ion-row>
-        <ion-col col-3 col-md-1 col-lg-1 col-md-1>
-          This column will be 12 columns wide by default,
-          9 columns at the small breakpoint,
-          6 at the medium breakpoint, 4 at large, and 3 at xl.
+        <ion-col col-7 col-sm-2>
+            <h3>Niveau</h3>
+        </ion-col>
+          <ion-col col-14 col-sm-5>
+            <h3>Formation</h3>
+        </ion-col>
+        <ion-col col-7 col-sm-2>
+            <h3>Tarif</h3>
         </ion-col>
       </ion-row>
     </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-7 col-sm-2>
+            Bachelor
+        </ion-col>
+          <ion-col col-14 col-sm-5>
+            Chef de projet digital
+        </ion-col>
+        <ion-col col-7 col-sm-2>
+            7000 €
+        </ion-col>
+        <ion-col col-7 col-sm-2>
+            <button ion-button>En savoir plus</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col col-7 col-sm-2>
+            Mastère
+        </ion-col>
+          <ion-col col-14 col-sm-5>
+            Expert en stratégie digitale
+        </ion-col>
+        <ion-col col-7 col-sm-2>
+            8000 €
+        </ion-col>
+        <ion-col col-7 col-sm-2>
+            <button ion-button>En savoir plus</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+        <ion-grid>
+      <ion-row>
+        <ion-col col-7 col-sm-2>
+            Mastère
+        </ion-col>
+          <ion-col col-14 col-sm-5>
+            Création digitale UX/UI
+        </ion-col>
+        <ion-col col-7 col-sm-2>
+            8000 €
+        </ion-col>
+        <ion-col col-7 col-sm-2>
+            <button ion-button (click)="register()">En savoir plus</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <H1>Admission</H1>
+    
+    <ion-list>
+            <ion-item>
+
+                <ion-label>Choix campus</ion-label>
+                <ion-select [(ngModel)]="campus">
+                    <ion-option value="lyon">Lyon</ion-option>
+                    <ion-option value="bordeaux">Bordeaux</ion-option>
+                    <ion-option value="paris">Paris</ion-option>
+                    <ion-option value="nice">Nice</ion-option>
+                    <ion-option value="nancy">Nancy</ion-option>
+
+                </ion-select>
+            </ion-item>
+    </ion-list>
+    
+    <ion-list>
+            <ion-item>
+
+                <ion-label>Choix formation</ion-label>
+                <ion-select [(ngModel)]="formation">
+                    <ion-option value="B1">Bachelor 1 Chef de projet digital</ion-option>
+                    <ion-option value="B2">Bachelor 2 Chef de projet digital</ion-option>
+                    <ion-option value="B3">Bachelor 3 Chef de projet digital</ion-option>
+                    <ion-option value="M1S">Mastère 1 Stratégie digitale</ion-option>
+                    <ion-option value="M2S">Mastère 2 Stratégie digitale</ion-option>
+                    <ion-option value="M1C">Mastère 1 Création digitale</ion-option>
+
+                </ion-select>
+    </ion-item>
+    </ion-list>
+    
+    <ion-item>
+  <ion-label>Date</ion-label>
+  <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate">
+  </ion-datetime>
+</ion-item>
+    
+    <button ion-button>Je prends rendez-vous !</button>
+    
+<ion-card>
+
+  <img src="../../assets/imgs/map.png">
+  <ion-fab right top>
+    <button ion-fab>
+      <ion-icon name="pin"></ion-icon>
+    </button>
+  </ion-fab>
+
+  <ion-item>
+    <ion-icon name="football" item-start large></ion-icon>
+    <h2>ESD Paris</h2>
+    <p>18 avenue de la Motte Piquet 75007 Paris</p>
+  </ion-item>
+</ion-card>
+    
+    
     
 </ion-content>

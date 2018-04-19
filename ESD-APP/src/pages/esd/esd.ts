@@ -21,5 +21,8 @@ export class EsdPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad EsdPage');
   }
-
+register()
+  {
+    this.navCtrl.setRoot();
+  }
 }
