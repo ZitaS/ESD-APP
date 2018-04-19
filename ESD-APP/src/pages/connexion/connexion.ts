@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { InscriptionPage } from '../inscription/inscription';
 
 /**
  * Generated class for the ConnexionPage page.
@@ -20,6 +21,11 @@ export class ConnexionPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ConnexionPage');
+  }
+    
+  inscription()
+  {
+    this.navCtrl.setRoot(InscriptionPage);
   }
 
 }
