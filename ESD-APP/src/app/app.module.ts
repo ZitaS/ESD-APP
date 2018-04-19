@@ -48,9 +48,7 @@ import { AngularFirestore } from 'angularfire2/firestore';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FIREBASE_PARAMS),
-   AngularFireAuth,
-   AngularFirestore
-   //CityProvider
+  
   ],
   bootstrap: [IonicApp],
   entryComponents: [
