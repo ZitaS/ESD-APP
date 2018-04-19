@@ -11,6 +11,7 @@ import { ActualitésPage } from '../actualités/actualités';
 import { TousPage } from '../tous/tous';
 import { JeuPage } from '../jeu/jeu';
 import { TournoiPage } from '../tournoi/tournoi';
+import { ESDPage } from '../esd/esd';
 
 @Component({
   templateUrl: 'tabs.html'
@@ -28,6 +29,7 @@ export class TabsPage {
   tab9Root = TousPage;
   tab10Root = JeuPage;
   tab11Root = TournoiPage;
+  tab12Root = ESDPage;
 
   constructor() {
 
