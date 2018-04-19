@@ -16,7 +16,6 @@ import { TousPage } from '../pages/tous/tous';
 import { JeuPage } from '../pages/jeu/jeu';
 import { TournoiPage } from '../pages/tournoi/tournoi';
 import { EsdPage } from '../pages/esd/esd';
-import { PrehomePage } from '../pages/prehome/prehome';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -41,8 +40,7 @@ import { AngularFirestore } from 'angularfire2/firestore';
     TousPage,
     JeuPage,
     TournoiPage,
-    EsdPage,
-    PrehomePage
+    EsdPage
   ],
   imports: [
     BrowserModule,
@@ -65,15 +63,14 @@ import { AngularFirestore } from 'angularfire2/firestore';
     TousPage,
     JeuPage,
     TournoiPage,
-    EsdPage,
-    PrehomePage
+    EsdPage
   ],
   providers: [
      AngularFireAuth,
    AngularFirestore,
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler,}
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}
