@@ -36,17 +36,15 @@ public afAuth:AngularFireAuth) {
   
   async connexion()
   {
-  
-  try {
-  
-let result = await this.afAuth.auth.signInWithEmailAndPassword(this.user.email,this.user.password);
-if(result) {
-this.navCtrl.setRoot("HomePage");
-}} catch(err) {
-console.log(err);
+      try {
 
-
-}
-}
+          let result = await this.afAuth.auth.signInWithEmailAndPassword(this.user.email,this.user.password);
+        if(result) {
+            this.navCtrl.setRoot("HomePage");
+        }
+      }catch(err) {
+          console.log(err);
+      }
+  }
 }
 

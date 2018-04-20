@@ -10,14 +10,4 @@ import { InscriptionPage } from './inscription';
     IonicPageModule.forChild(InscriptionPage),
   ],
 })
-export class InscriptionPageModule {
-
-user = {} as user;
- constructor (
- public afAuth: AngularFireAuth,
- public navCtrl: NavController, public NavParams: NavParams)
- 
- ionViewDidLoad() {
- console.log ('ionViewDidLoad ResgisterdemoPage');
- }
-}
+export class InscriptionPageModule {}
